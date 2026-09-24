@@ -4,6 +4,11 @@ Scores a source file against a fixed rubric (readability, idiomaticity,
 simplicity, maintainability, security) using [jev](https://typesafe.ai/),
 TypeSafe AI's System One model.
 
+> **Disclaimer:** this repo is an exercise, not a production tool. It was
+> triggered by curiosity about this new technology and by the outsized
+> reaction it's gotten from the community, so I wanted to try it out on a
+> use case that's admittedly trivial, just to explore what the tool can do.
+
 Each dimension is a `Score` question (0-4, ordered rubric levels) sent to
 jev in a single `system_one` call, evaluated in parallel and in isolation.
 
